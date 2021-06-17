@@ -1,0 +1,203 @@
+
+body {
+background-color:#000000;
+/* background-color:rgb(0, 0, 0); */
+
+/* animation-name: colorShift;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-direction: alternate; */
+z-index:-5;
+}
+
+#GameBoard {
+	position: relative;
+	margin: auto;
+	/* border-style: solid; */
+	/* background-color:rgb(0, 0, 0); */
+
+	/* animation-name: colorShift;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate; */
+	z-index:-5;
+}
+ #GameBoard .grid {
+	position: absolute;
+	/* background-color: none; */
+	border: 1px solid rgb(255, 255, 255, .5);
+	opacity: .6;
+	/* animation: pulse .60s infinite; */
+	
+	
+}
+
+#GameBoard .Block {
+	/* animation: pulse .60s infinite; */
+	position: absolute;
+
+	/* border-radius: 1px; */
+	/* border: 1px solid rgb(255, 255, 255); */
+	/* box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.911); */
+}
+#GameBoard .Apple {
+	/* animation: pulse .60s infinite; */
+	position: absolute;
+	/* border-radius: 1px; */
+	border: 1px solid rgb(255, 255, 255);
+	/* box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.911); */
+}
+#GameBoard .tail {
+	/* animation: pulse .60s infinite; */
+	position: absolute;
+	border-radius: 1px;
+	/* border: 1px solid rgb(255, 255, 255); */
+	/* box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.911); */
+}
+
+#GameBoard .aiBlock {
+	position: absolute;
+	border-radius: 1px;
+	/* border: 1px solid rgb(255, 255, 255); */
+	box-shadow: 2px 2px 5px rgba(7, 7, 168, 0.911);
+}
+#GameBoard #GameOver {
+	text-align: center;
+	height: 100%;
+	flex-direction: column;
+	display: flex;
+	justify-content: space-around;
+	font-size: 80px;
+}
+
+#GameBoard #Score {
+	position: relative;
+	top: 105%;
+	text-align: center;
+	font-weight: bold;
+}
+
+#GameBoard #GameOverText {
+	color: #ca0000;
+	font-weight: bold;
+	text-decoration-line: underline;
+}
+
+#GameBoard #PressSpaceText {
+	color: #2e7ecb;
+	font-weight: bold;
+}
+
+.blob {
+	background: black;
+	border-radius: 50%;
+	margin: 10px;
+	height: 20px;
+	width: 20px;
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+@keyframes fadein {
+	80% {opacity:0;}
+	0% {opacity:1;}
+  }
+  #GameBoard .assist {
+	background: rgb(255, 255, 255);
+	position: absolute;
+	border-radius: 1px;
+	/* border: 1px solid rgb(255, 255, 255); */
+	/* box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.911); */
+	animation: fadeOut 2s;
+}
+@keyframes fadeOut {
+	80% {opacity:.5;}
+	100% {opacity:.5;}
+	20% {opacity:.5;}
+  }
+  
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgb(255, 255, 255);
+	}
+	
+	100% {
+		transform: scale(2);
+		box-shadow: 0 0 0 0 rgb(255, 255, 255);
+	}
+	
+	
+
+}
+@keyframes pulse2 {
+
+	80% {
+		transform: scale(.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+
+	0% {
+		transform: scale(1.1);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+@keyframes pulse3 {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgb(255, 255, 255);
+	}
+	
+	100% {
+		transform: scale(12);
+		box-shadow: 0 0 0 0 rgb(255, 255, 255);
+	}
+	
+}
+
+	@keyframes pulse4 {
+		0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgb(255, 255, 255);
+	}
+	
+	100% {
+		transform: scale(12);
+		box-shadow: 0 0 0 0 rgb(255, 255, 255);
+	}
+	
+}
+@keyframes pulse5 {
+	
+
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgb(255, 255, 255);
+	}
+	
+	100% {
+		transform: scale(12);
+		box-shadow: 0 0 0 0 rgb(255, 255, 255);
+	}
+	
+	
+}
+@keyframes pulse6 {
+	
+	
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgb(255, 255, 255);
+	}
+	
+	100% {
+		transform: scale(10);
+		box-shadow: 0 0 0 0 rgb(255, 255, 255);
+	}
+	
+}
+@keyframes colorShift {
+	from {background-color: #000000;}
+	to {background-color: rgba(255, 255, 255, 0.144);}
+  }
